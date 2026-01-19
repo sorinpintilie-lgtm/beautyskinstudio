@@ -94,8 +94,23 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      {/* Promo Bar */}
+      <div className="promo-bar">
+        <div className="promo-desktop">
+          <span>Concept demo • Conținut orientativ • Dezvoltat de sky.ro • <a href="mailto:dan.trifan@sky.ro">dan.trifan@sky.ro</a> • <a href="tel:+40720088880">+4 0720 088 880</a></span>
+          <a className="btn-promo" href="https://wa.me/40720088880">WhatsApp</a>
+        </div>
+        <div className="promo-mobile">
+          <div className="promo-left">Concept demo</div>
+          <div className="promo-center">Dezvoltat de sky.ro</div>
+          <div className="promo-right">
+            <a href="tel:+40720088880">+4 0720 088 880</a>
+          </div>
+        </div>
+      </div>
+
       {/* Header */}
-      <header className={`fixed w-full bg-primary/95 backdrop-blur-md z-50 transition-all duration-300 ${isScrolled ? 'shadow-md py-4' : 'shadow-sm py-6'}`}>
+      <header className={`fixed w-full bg-primary/95 backdrop-blur-md z-50 transition-all duration-300 ${isScrolled ? 'shadow-md py-4' : 'shadow-sm py-6'}`} style={{ top: 'calc(var(--promo-height) + env(safe-area-inset-top))' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex justify-between items-center">
             <div className="flex items-center">
