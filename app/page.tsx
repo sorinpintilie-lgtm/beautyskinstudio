@@ -19,32 +19,32 @@ export default function Home() {
     {
       icon: 'fa-face-smile',
       title: 'Îngrijire față',
-      description: 'Regimuri de îngrijire personalizate pentru un ten strălucitor și o piele radiantă.'
+      description: 'Ten echilibrat, luminos, îngrijit. Rutine și tratamente alese pentru tine.'
     },
     {
       icon: 'fa-hand-fist',
       title: 'Metode de slăbire',
-      description: 'Soluții inovatoare pentru o siluetă sculptată și o încredere sporită.'
+      description: 'Tehnologii și protocoale pentru contur, tonus și susținerea obiectivelor tale.'
     },
     {
       icon: 'fa-spa',
       title: 'Îngrijire corp',
-      description: 'Rituale relaxante și revitalizante pentru un corp și o minte în armonie.'
+      description: 'Ritualuri pentru relaxare, confort și o piele care se simte bine.'
     },
     {
       icon: 'fa-heart',
       title: 'Tratamente anti-îmbătrânire',
-      description: 'Tehnologii avansate pentru a reduce semnele îmbătrânirii și a redobândi o piele tânără.'
+      description: 'Tratamente pentru fermitate, textură și aspect proaspăt, fără exagerări.'
     },
     {
       icon: 'fa-droplet',
       title: 'Hidratare intensă',
-      description: 'Îngrijiri profunde pentru a hidrata și hrăni pielea, făcând-o moale și catifelată.'
+      description: 'Hidratare profundă pentru piele suplă, fină și catifelată.'
     },
     {
       icon: 'fa-star',
-      title: 'Tratament premium',
-      description: 'Experiențe exclusive care combină cele mai bune tehnici pentru rezultate excepționale.'
+      title: 'Tratament Complet',
+      description: 'Tot ce ai nevoie într-o singură sesiune: evaluare, protocol adaptat și îngrijire premium.'
     }
   ]
 
@@ -137,20 +137,32 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0 gradient-bg opacity-5"></div>
+        <div className="absolute inset-0">
+          <video
+            src="/hero-new.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black opacity-20"></div>
+        </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="floating-animation inline-block mb-4">
             <i className="fas fa-spa text-primary text-5xl"></i>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight fade-in-up text-white">
             Descoperiți o <span className="gradient-text">nouă eleganță</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            La Beauty Skin Studio, vă oferim o experiență de frumusețe excepțională cu tratamente personalizate și rezultate remarcabile.
+          <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed hidden md:block font-normal">
+            La Beauty Skin Studio, vă oferim o experiență de <br />
+            frumusețe excepțională cu tratamente personalizate și<br />
+            rezultate remarcabile.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-up" style={{ animationDelay: '0.3s' }}>
             <button className="btn-primary">
-              <i className="fas fa-calendar-alt mr-2"></i> Rezervați o programare
+              <i className="fas fa-calendar-alt mr-2"></i> Faceți o programare
             </button>
             <button className="btn-secondary">
               <i className="fas fa-info-circle mr-2"></i> Aflați mai multe
@@ -167,12 +179,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 fade-in-up">
-              O echipă de
-              <span className="gradient-text"> exelență</span>
+              O echipă cu
+              <span className="gradient-text"> standarde înalte</span>
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-gray-600 max-w-3xl mx-auto fade-in-up" style={{ animationDelay: '0.2s' }}>
-              Echipa noastră de profesioniști calificați vă întâmpină într-un cadru călduros pentru a vă oferi îngrijiri de frumusețe excepționale.
+              Profesioniști cu experiență, atenți la detalii, într-un spațiu cald și discret.
             </p>
           </div>
 
@@ -187,15 +199,15 @@ export default function Home() {
               />
             </div>
             <div className="space-y-6 fade-in-up" style={{ animationDelay: '0.3s' }}>
-              <h3 className="text-3xl font-bold gradient-text">Filosofia noastră</h3>
+              <h3 className="text-3xl font-bold gradient-text">Despre Beauty Skin Studio</h3>
               <p className="text-gray-600">
-                La Beauty Skin Studio, credem că frumusețea este o combinație de expertiză, îngrijiri personalizate și tehnologie de ultimă generație. Fiecare client este unic, iar noi adaptăm tratamentele pentru a răspunde nevoilor dumneavoastră specifice.
+                Credem în îngrijire atentă, aleasă cu cap. Te ascultăm, analizăm și adaptăm tratamentele astfel încât să se potrivească pielii și stilului tău de viață.
               </p>
               <p className="text-gray-600">
-                Cu peste 10 ani de experiență în sectorul esteticii, echipa noastră este dedicată să vă ofere rezultate excepționale într-un mediu relaxant și sigur.
+                Tehnologie de ultimă generație.
               </p>
               <div className="space-y-4">
-                {['Expertiză profesională', 'Tratamente personalizate', 'Tehnologie de ultimă generație', 'Rezultate garantate'].map((item, index) => (
+                {['Expertiză profesională', 'Tratamente personalizate', 'Rezultate care se construiesc în timp', 'Rezultate garantate'].map((item, index) => (
                   <div key={index} className="flex items-center">
                     <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white mr-4">
                       <i className="fas fa-check"></i>
@@ -214,11 +226,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 fade-in-up">
-              <span className="gradient-text">Serviciile</span> noastre
+              Descoperiți <span className="gradient-text">serviciile</span> noastre
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-gray-600 max-w-3xl mx-auto fade-in-up" style={{ animationDelay: '0.2s' }}>
-              Descoperiți gama noastră completă de servicii estetice pentru o bunăstare totală.
+              Descoperiți gama noastră completă de servicii estetice pentru bunăstarea dumneavoastră.
             </p>
           </div>
 
@@ -294,7 +306,7 @@ export default function Home() {
             </h2>
             <div className="w-24 h-1 bg-white mx-auto mb-6"></div>
             <p className="max-w-3xl mx-auto fade-in-up" style={{ animationDelay: '0.2s' }}>
-              Pregătit să începi călătoria către o frumusețe sporită? Suntem aici să te ajutăm.
+              Începe cu o programare. Ne ocupăm de restul.
             </p>
           </div>
 
